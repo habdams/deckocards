@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>deckOcards</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+		
+	</head>
+	<body> 
+		<header class= "bg-yellow-200 flex justify-between item-center p-3">
+			<img class="ml-20" src="https://www.flaticon.com/premium-icon/icons/svg/720/720357.svg" width="36" alt="logo">
+			<section class="px-20">
+				<p class="inline p-2 text-yellow-900 hover:border-yellow-900 font-bold">deck'O'Cards</p>
+				<!-- <a class="inline p-2 text-yellow-900" href="#">about</a> -->
+			</section>
+		</header>
+
+		<section class="flex justify-center mt-5 ">
+			<section class="flex flex-col text-center">
+				<h5 class="text-yellow-900">Cards remaining</h5>
+				<h2 id="remaining">0</h2>
+			</section>
+		</section>
+	
+		<section class="flex justify-center">
+
+			<section class="w-5/3 p-10">
+				<h2 class="pb-5 text-yellow-500">Player 1</h2>
+				<img id="playerOne" src="" alt="">
+			</section>
+
+			<section class="w-1/6 flex flex-col content-center pt-10 px-5">
+				<section class="flex flex-col pt-20">	
+					<h5 class="text-center text-yellow-900">Who won?</h5>
+					<h2 class=" animate-pulse text-center text-xl font-bold text-yellow-800" id='winner'><!--Winner Here--></h2>
+				</section>
+
+				<section class="flex flex-col mt-10">
+					<button class=" m-2 bg-yellow-400 rounded p-3 text-yellow-900 hover:bg-yellow-300 hover:text-yellow-700 transition ease-in duration-150" type="button" id='drawCard' name="button">draw cards</button>
+
+					<button class=" m-2 border-yellow-200 rounded border-2 p-3 text-yellow-900 hover:bg-yellow-100 hover:text-yellow-700 transition ease-in duration-150" type="button" id='reshuffle' name="button">reshuffle</button>
+				</section>
+
+			</section>
+
+			<section class="w-5/3 p-10">
+			<h2 class="pb-5 text-yellow-500">Player 2</h2>
+			<img id="playerTwo" src="" alt="">
+			</section>
+		
+	</section>
+
+	<footer class="flex justify-center mt-10 text-yellow-600dir
+	">
+		<p>Made by <a class="hover:underline hover:text-yellow-700" href="https://www.linkedin.com/in/adetunji-ojekunle-245275154/" target="_blank">Adetunji Ojekunle</a></p>
+	</footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
